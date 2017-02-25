@@ -24,3 +24,8 @@ case ${OSTYPE} in
     alias ls='ls -G'
     ;;
 esac
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
