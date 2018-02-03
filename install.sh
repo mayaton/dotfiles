@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Here is dotfiles list
-DOT_FILES=(.bashrc .bash_profile)
+DOT_FILES=(.bashrc .bash_profile .vimrc)
 
 ## install
 
