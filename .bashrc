@@ -4,8 +4,11 @@
 export PATH="/usr/local/bin:$PATH:/usr/local/sbin"
 export TERM=xterm-color
 
-## OSX VMware Fusion.app -> VM CUI Control
-#PATH=$PATH:/Applications/VMware\ Fusion.app/Contents/Library
+# Path for Go
+if [ -x "`which go`" ]; then
+    export GOPATH=$HOME/.go
+    export PATH=$PATH:$GOPATH/bin
+fi
 
 # Alias
 alias rm='rm -i'
